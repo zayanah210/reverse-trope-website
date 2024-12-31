@@ -1,0 +1,238 @@
+html {
+    height: 100%;
+    width: 100%;
+
+  }
+
+  @font-face {
+    font-family: "TitlePixel";
+    src: url(04B_30__.TTF);
+  }
+
+  @font-face {
+    font-family: "DescriptionPixel";
+    src: url(PixelifySans-VariableFont_wght.ttf);
+  }
+
+  body {
+    background-color: white;
+    overflow: hidden;
+    background-image: url("images/bg.jpg");
+    background-size: cover;
+  }
+
+
+  h1 {
+    font-family: "TitlePixel";
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: .0005rem rgb(255, 170, 184);
+    font-size: 6rem;
+    z-index: 3;
+    margin: 0rem;
+    position: relative;
+  }
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+
+    position: relative;
+    z-index: 3;
+
+    /* border-style: dotted;
+    border-color: black; */
+  }
+
+  .sparkle-container {
+    /* border-color: black;
+    border-style: dashed; */
+
+    height: 18rem;
+    width: 20rem;
+
+    position: absolute;
+    margin-right: 75%;
+    z-index: 4;
+
+
+  }
+
+  .sparkleLargeClass {
+    bottom: 0%;
+    right: 50%;
+
+    height: 13rem;
+    position: absolute;
+
+    /* border-style: dotted;
+    border-color: black; */
+  }
+
+  .crossClass {
+    z-index: 8;
+    position: absolute;
+/* 
+    border-style: dotted;
+    border-color: black; */
+  }
+
+  #bigCrossId {
+    bottom: 50%;
+    right: 85%;
+
+    height: 3rem;
+  }
+
+  #smallCrossId {
+    bottom: 70%;
+    right: 80%;
+
+    height: 2rem;
+  }
+
+  h2 {
+    font-family: "DescriptionPixel";
+    font-size: 1.3rem;
+    margin: .1rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: .09rem rgb(88, 20, 32);
+    letter-spacing: .4rem;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 200vh;
+  }
+
+  .description-container h2 {
+    width: 85%;
+    text-align: left;
+  }
+
+  .textbox-parent-container {
+    display: flex;
+    gap: 2rem;
+
+    height: 18rem;
+
+
+    /* border-color: black;
+    border-style: dashed; */
+  }
+
+  .button-child-container {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    /* border-color: rgb(194, 41, 255);
+    border-style: dashed; */
+  }
+
+  .button-child-container img {
+    display: absolute;
+
+    width: 23rem;
+
+    /* border-color: rgb(67, 30, 82);
+    border-style: dashed; */
+  }
+
+  .generateButton {
+    background-image: url('images/buttonBackground.jpg');
+    background-size: contain;
+    height: 4.3rem;
+    width: 9.5rem;
+    /* border-color: rgb(0, 252, 84);
+    border-style: dashed; */
+
+    font-family: "TitlePixel";
+    -webkit-text-stroke: .04rem rgb(88, 20, 32);
+    color: white;
+
+    display: absolute;
+  }
+
+  .textbox-child-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    width: 38rem;
+    margin-left: 10rem;
+
+    /* border-color: rgb(255, 0, 0);
+    border-style: dashed; */
+  }
+
+  .textbox-child-container img {
+    width: 38rem;
+    z-index: 6;
+    display: flex;
+    position: absolute;
+    
+
+    /* border-color: black;
+    border-style: dashed; */
+  }
+
+  #myTrope {
+    width: 20rem;
+    font-size: 1.6rem;
+
+    font-family: "DescriptionPixel";
+    -webkit-text-stroke: .1rem rgb(255, 118, 164);
+
+    margin-right: 4rem;
+    margin-bottom: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 9;
+
+    /* border-color: rgb(47, 0, 255);
+    border-style: dashed; */
+  }
+
+  #myTropeDescription {
+    width: 20rem;
+    font-size: 1rem;
+
+    font-family: "DescriptionPixel";
+
+    margin-right: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 9;
+
+    /* border-color: rgb(47, 0, 255);
+    border-style: dashed; */
+  }
+
+  #titleTextId {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  
