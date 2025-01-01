@@ -198,7 +198,7 @@ html {
     h1 {
       font-size: 7rem;
       margin-top: 1rem;
-      -webkit-text-stroke: .06rem rgb(255, 170, 184);
+      -webkit-text-stroke: .09rem rgb(255, 170, 184);
     }
 
     h2 {
@@ -236,16 +236,16 @@ html {
 
     .textbox-child-container {
       height: 45rem;
-      border-style: dotted;
-      border-color: rgb(0, 255, 128);
+      /* border-style: dotted;
+      border-color: rgb(0, 255, 128); */
       background-image: url('images/textboxBottom.png');
       background-size: cover;
     }
 
     .textbox-parent-container {
       flex-direction: column;
-      border-style: dotted;
-      border-color: blue;
+      /* border-style: dotted;
+      border-color: blue; */
       height: 50rem;
       gap: 8rem;
     }
