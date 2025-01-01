@@ -14,131 +14,18 @@ html {
     src: url(PixelifySans-VariableFont_wght.ttf);
   }
 
-  @media (min-width: 1025px) and (max-width: 1440px) {
-
-    h1 {
-      font-size: 6rem;
-    }
-
-    h2 {
-      -webkit-text-stroke: .09rem rgb(88, 20, 32);
-    }
-
-    .textbox-parent-container {
-      flex-direction: row;
-      height: 18rem;
-    }
-
-    .description-container {
-      margin: 1rem;
-      width: 200vw;
-
-    }
-
-    .description-container h2 {
-      width: 85%;
-    }
-
-    .title-container {
-      margin-top: 1rem;
-    }
-
-    .textbox-child-container img {
-      width: 38rem;
-    }
-
-    .textbox-child-container {
-      width: 38rem;
-      margin-left: 10rem;
-    }
-
-    .button-child-container {
-      flex-direction: column-reverse;
-      gap: 1rem;
-    }
-
-    .button-child-container img {
-      width: 23rem;
-    }
-
-    .generateButton {
-      height: 4.3rem;
-      width: 9.5rem;
-    }
-  }
-
   @media (max-width: 768px) {
     html {
       font-size: 6px; /* 1rem = 14px */
     }
 
     h1 {
-      font-size: 6rem;
-      margin-top: 1rem;
-    }
-
-    h2 {
-      -webkit-text-stroke: .15rem rgb(88, 20, 32);
+      font-size: 3rem;
+      font-family:Arial, Helvetica, sans-serif;
     }
 
     .textbox-parent-container {
       flex-direction: column;
-      height: 30rem;
-    }
-
-    .description-container {
-      margin-top: 3rem;
-      margin-bottom: 3rem;
-      width: 90vw;
-
-      border-style: dashed;
-      border-color: yellow;
-    }
-
-    .description-container h2 {
-      font-size: 1.6rem;
-      padding: 1rem;
-    }
-
-    .title-container {
-      margin-top: 3rem;
-    }
-
-    .textbox-child-container img {
-      width: 55rem;
-      /* border-style: dotted;
-      border-color: red; */
-    }
-
-    .textbox-child-container {
-      height: 23rem;
-      border-style: dotted;
-      border-color: rgb(0, 255, 128);
-      background-image: url('images/textboxBottom.png');
-    }
-
-    .textbox-parent-container {
-      flex-direction: column;
-      border-style: dotted;
-      border-color: blue;
-      height: 42rem;
-    }
-
-    .button-child-container {
-      
-      border-color: rgb(194, 41, 255);
-      border-style: dashed;
-      flex-direction: row-reverse;
-      gap: 0rem;
-      margin: 0rem;
-    }
-
-    .button-child-container img {
-      width: 20rem;
-    }
-
-    .generateButton {
-      width: 30rem;
     }
   }
   
@@ -155,6 +42,7 @@ html {
     font-family: "TitlePixel";
     color: rgb(255, 255, 255);
     -webkit-text-stroke: .0005rem rgb(255, 170, 184);
+    font-size: 6rem;
     z-index: 3;
     margin: 0rem;
     position: relative;
@@ -166,6 +54,7 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 1rem;
 
     position: relative;
     z-index: 3;
@@ -174,12 +63,59 @@ html {
     border-color: black; */
   }
 
+  .sparkle-container {
+    /* border-color: black;
+    border-style: dashed; */
+
+    height: 18rem;
+    width: 20rem;
+
+    position: absolute;
+    margin-right: 75%;
+    z-index: 4;
+
+
+  }
+
+  .sparkleLargeClass {
+    bottom: 0%;
+    right: 50%;
+
+    height: 13rem;
+    position: absolute;
+
+    /* border-style: dotted;
+    border-color: black; */
+  }
+
+  .crossClass {
+    z-index: 8;
+    position: absolute;
+/* 
+    border-style: dotted;
+    border-color: black; */
+  }
+
+  #bigCrossId {
+    bottom: 50%;
+    right: 85%;
+
+    height: 3rem;
+  }
+
+  #smallCrossId {
+    bottom: 70%;
+    right: 80%;
+
+    height: 2rem;
+  }
 
   h2 {
     font-family: "DescriptionPixel";
     font-size: 1.3rem;
     margin: .1rem;
     color: rgb(255, 255, 255);
+    -webkit-text-stroke: .09rem rgb(88, 20, 32);
     letter-spacing: .4rem;
   }
 
@@ -188,33 +124,53 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin: 1rem;
+    width: 200vh;
   }
 
   .description-container h2 {
+    width: 85%;
     text-align: left;
   }
 
   .textbox-parent-container {
     display: flex;
     gap: 2rem;
+
+    height: 18rem;
+
+
+    /* border-color: black;
+    border-style: dashed; */
   }
 
   .button-child-container {
+    gap: 1rem;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 
+    /* border-color: rgb(194, 41, 255);
+    border-style: dashed; */
   }
 
   .button-child-container img {
     display: absolute;
 
+    width: 23rem;
+
+    /* border-color: rgb(67, 30, 82);
+    border-style: dashed; */
   }
 
   .generateButton {
     background-image: url('images/buttonBackground.jpg');
     background-size: contain;
+    height: 4.3rem;
+    width: 9.5rem;
+    /* border-color: rgb(0, 252, 84);
+    border-style: dashed; */
 
     font-family: "TitlePixel";
     -webkit-text-stroke: .04rem rgb(88, 20, 32);
@@ -230,12 +186,15 @@ html {
     align-items: center;
     text-align: center;
 
+    width: 38rem;
+    margin-left: 10rem;
+
     /* border-color: rgb(255, 0, 0);
     border-style: dashed; */
   }
 
   .textbox-child-container img {
-  
+    width: 38rem;
     z-index: 6;
     display: flex;
     position: absolute;
